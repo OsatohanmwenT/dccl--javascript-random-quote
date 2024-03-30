@@ -13,6 +13,7 @@ const getAdvice = () => {
       author.innerHTML = `${data.author}`
       adviceText.innerHTML = `"${data.content}"`
 
+      tagsContainer.innerHTML = ""
       const tags = data.tags
       tags.forEach(tag => {
         const tagElement = document.createElement('span');
